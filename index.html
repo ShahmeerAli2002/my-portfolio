@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="container">  
+          <a href="#">My Portfolio</a>
+        </div>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>
+          I'm Shahmeer Ali
+          <br>
+          Welcome to My Portfolio
+        </h1>
+        <p></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100013307523676" class="fa fa-facebook " target="_blank"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://github.com/ShahmeerAli2002" class="fa fa-google" target="_blank"></a>
+          <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"target="_blank"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>1. **Proficiency in Front-End Technologies**:
+        - **HTML**: Knowledge of structuring web content.
+        - **CSS**: Styling and layout skills to make the content visually appealing.
+        - **JavaScript**: Adding interactivity and functionality to web pages.
+       <br>
+       2. **TypeScript Expertise**:
+        - **TypeScript**: Strong understanding of TypeScript, a superset of JavaScript that adds static types. This helps in writing more predictable and maintainable code by catching errors early through type checking.
+       <br>
+       3. **Responsive Design**:
+        - **Responsive Web Design**: Ability to create web pages that look good on all devices (desktops, tablets, and phones) by using flexible grids, layouts, images, and CSS media queries.
+       <br>
+       4. **Modern JavaScript Frameworks**:
+        - **Frameworks and Libraries**: Familiarity with popular frameworks and libraries like React, Angular, or Vue.js. These tools help in building complex user interfaces efficiently.
+       <br>
+       5. **Version Control**:
+        - **Git**: Proficiency in using version control systems like Git. This is essential for collaborating with other developers and managing changes to the codebase.
+       <br>
+       6. **Problem-Solving and Debugging**:
+        - **Debugging Skills**: Strong problem-solving abilities and proficiency in debugging tools and techniques. This includes using browser developer tools to troubleshoot and optimize web applications.
+       <br>
+       These points collectively describe a well-rounded web developer proficient in the core technologies and practices of modern front-end development.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+      </div>
+      <div class="project-grid">
+        <div class="project-item" data-category="web">
+          <img src="images.jpg" alt="Project 1" />
+          <div class="project-details">
+            <h3>Project 1</h3>
+            <p>Brief description of Project 1</p>
+            <a href="https://github.com/ShahmeerAli2002/ATM-Machine" class="project-link">View Details</a>
+          </div>
+        </div>
+        <div class="project-item" data-category="mobile">
+          <img src="images1 .jps.jpg" alt="Project 2" />
+          <div class="project-details">
+            <h3>Project 2</h3>
+            <p>Brief description of Project 2</p>
+            <a href="https://github.com/ShahmeerAli2002/simple_calculator" class="project-link">View Details</a>
+          </div>
+        </div>
+        <div class="project-item" data-category="desktop">
+          <img src="images2.jpg" alt="Project 3" />
+          <div class="project-details">
+            <h3>Project 3</h3>
+            <p>Brief description of Project 3</p>
+            <a href="https://github.com/ShahmeerAli2002/OOPMYBANK" class="project-link">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section> 
+  </main>
+
+  <footer>
+    <p>© 2024 My Portfolio. All rights reserved & CopyRight By Shahmeer Ali</p>
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" />
+      <label for="theme-toggle" class="theme-toggle-label">
+        <span class="theme-toggle-icon"></span>
+      </label>
+    </div>
+  </footer>
+
+  <div class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn">×</span>
+      <div class="modal-body">
+        <!-- Project details will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>
